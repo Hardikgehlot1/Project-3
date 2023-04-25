@@ -1,0 +1,70 @@
+/* body {
+    padding: 0;
+    margin: 0;
+  }
+  
+  #map,
+  body,
+  html {
+    height: 100%;
+  } */
+
+  body {
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* #map,
+  body,
+  html {
+    height: 100%;
+  } */
+
+  /* CREATTING CUSTOMIZATION FOR THE MAP SHOWING TO TBE THE SAME AS THE DENNY map */
+  #map {
+    height: 65%;
+    width: 65%;
+    /* margin-left: auto;
+    margin-right: auto;
+    margin-top: auto; */
+    position: fixed;
+    bottom: 100px;
+    right: 450px;
+    /* width: 300px; */
+    border: 3px solid #40bdd3;
+}
+
+/* SETTING UP THE BACKGROUND IMAGE TO MIRROR THE DENY image */
+/* CHANGE IMAGE TO POLITICAL ATTIRE WITH RED VS BLUE */
+.bgimg-1 {
+  position: relative;
+  opacity: 0.4;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* .bgimg-1 {
+  /* background-image: url("https://imageio.forbes.com/blogs-images/bradtempleton/files/2019/04/whtesla-1200x804.jpg?format=jpg&width=960"); */
+  /* background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAK4AAACOCAMAAACffsPqAAABEVBMVEX///8ac8f6AQkFY5n6AAn6AAD/AABiW5+4AAwAdsy3AAAAbMUAasT6+/20AABXkNH46+y/Nzj+09QAZsMXcMD9+fn8jY4UbbcLZ6QAYMEAcsv/8PD0///l7ffy9vsOaKmUtd/T4fJdVZz+5eb7T1D9v7/6Jyn8qan+3t/qx8f7SUn8lJbI1+0AWpOErNxAhM2uxuaivuOMq8Whu9AAV5Yxfcvq6ur8f4DMaGr8oKHTAQv7amrnAQrAQEH6Gxv7cnP6NDX7Xl/GAAy7Gx7YkJHgrKwxdKJqmdRzmbgAXaayxNMscapMfqfn0deBQGhDXIvUvcwARotIQ3BURJKfosh5fLPSfX/FVFbYKivgoKDgcHNeRSMjAAALZklEQVR4nO1ZCVejShqlEqsnBgIawIUIho7ZFCFR477EpU230z3re89x/v8Pma+q2AIFwX7p7jPncD2aShVUXb6631IoCCVKlChRokSJEiVKlChRokSJEiVKlCjx/42GaTuOY5vWryZSBHZ7NjFUVZWQ4jqNX0aj2MrmDIkiQkjTEDJE5I1+EWFzPC6w8ghJSNvc3aoCtnY3NUP1nB/PjYNnT3QX8nXBsIyrj11NNMY/g14Sh5tImtj517RVtFlNYFdTlV/gc0AXiZNR3iUjMc0WNKFJs5/P9xnoIqS62StbXLaATXH20x3u8wmhiyTFzLrClTQuW+Crtn8iU4qXQ0oXBJHh6uYEbWXQrW4attDg4YfRNZkaiCDa3FVGIl8KFNpE4WHWHts/SNdHuz5dJKZcxx6324qRaVyID4aYAeS1M+X1Z2BWA/NCKohHtMYIbUuSZGQpl8kBZUJS3R9B+OhLuIKBxpGBZyLrzNECmDebLhD2cgPk98H6qkUriJvPL4yxIvldu3l0qxqXaAB1ccZ8N+yt+ArayTHpHAdss+PCIjVQA/+A0PzyZW4JYhEz+ppPdwvlQ5wtna7w8te5HZzRMqEY3eoCukhqL5/v0W5cg+pImBS17kK6SFx6qWk9z3u4Z4vRl9zIUIAuQsuW7/FhwsHdWFur5tp3MVtxyZWxfRI5jLa5qSHDQ+ycE/buZlIuYN3JUtOF9TUyLt15DU0Iwa05hWxmEC5AV11qtjg6DHlp1cMqCU4eSw7zUYor4ty05kNUlsj2JSYF5Bw/A4fJjBQKJ9XneUlrHAMvSBMM28tja8cTqWcK3/5W3fLaYOa/H5uOlFg3zTc/CQd0FxwGi8N8Poztpwgqa7qa4iDtH11BSNFN8S2ihWWK9+vhvLO4bUU0FEc0PMeyvfTK73c0gLSsUPb5JLGd5F2NMTPhryRKRnrl+eq3kHJhQnc5bI8OeSuKrpBSQYjd97OF518K2+NDrvigKhE53Qza+9kuiS6wjYkvqmqkkZCzdmDe3UJBYXl0CdtoyckoousIHke2Pph5twqbFi1Hu0cnc1Fz0hgFglXN8KDGw+7u5nu4IuoMRdHIOPB/PpwXn8deNBJAEmpn+9p3oGggM8cIzt6TWXtkm6YVqzvNrydbc/tJ5GX78pUEYbRUugXTxHiiImIxUVJVw1NmbntM0Xa9sDz0LUrOKIF1wdCOyls2ghc5phFro7l2RLfQgYKcZkVX8b3GmLjk9YokieJ22Im8NvuEtG5Ri2qb5DRo5tNVR2MxarfDtuS4keijdqGagWyoOLGCU6I6thAjCZ3jsLPhd/oUoer64tIXedkwJNG0PElkbdUyJ0FbgmcO2qhhqiKbW30pQJe8lZmMBNszREJRaQgu2XpDpJ2kKSKvIcwmBjtfWyKzrgS2sJTsSDZRZuOG4LiKx9ognVnUHrnKhLZHQRuW/Lr4uOZKQfxouEbwPt9GUacYdk7YcdVVmcHJaE4kC18FjwykBNs8NqL+MThuEI/a5LG16kI12BoRLnkqUxHBzjabKOz0CB/S2SCdHpnemm2r2xLzYjdBV/sSxmgDMc+hrhG01egVcZu2bd9m9OaTRWpo0JOARB6YGooalTkQpzOINKYTWmuerjiOn+VFm24UQ9Q2EJnZYdpFxADONr18dvh5Ad3jE40q0rbZfoAgRw2L3Uw7KV1HcCzSaaTud+JcVVVyTmOxgh5tGzMqb4+2FeS3G0KDBjADvAJ2kVJXR5+f88VrVY/JDGPXMNqU2cTxRM+hwk93SukwHg8Nrn1qntrbUYdnOWjWYBugWCPkWjQLGqxNBSAq1pi0yTWq/XKST/eoCnl0ddWAX8lYJVAN+g1giIlOg/ea0GNXwDWOcHqqn7bF1RCTmQq3zehk3kxdhbZB24q6qvptRVENdULbq7b5z1y6p/86Fqx//6UgPvJeW/z20R/9HabTT09/i0/3MfxTpP27aR7m/qviqdYShO6HgrjgTdEMRg/AuI1TSy86Wxr3Les590VO7Y38vcOVFfKzkvexgq+4U7Qwphfhi8YpEBaEPq4UmK6S/o7PhMbXPLpvjx2y4H0Ruvhe509y5tM92BH0U9ax8n10+1Cu5ohBPz8nH519sMci4GknY5Y+uxvfw4Rs2n28snhCzhKDXLr6ufxEPrtkPbKDOXbA+4OsaTpTak2Mo5592vNO6+JbuPUok+7ajSzLQ2hcwG7i6W3ug++3sjfpzjdvZP7OXoH9Sq1xB2nkODOQfZJrNZm4GtgC954ucbYd8G0zmy3sDrsoFjg69zhnugzrdiFrZdbn+k29Vqu/EdeGJ+s/yZeVTJPgvRzjCsItvRFfxX2x33ungfEU1rAyA4MOxq3VP1Et4P21x3rtYYpxUsKYWglCTB4uMLVub07egzMyW3Hr0jWy/we/BnTrN2tCC+IC7oIy6uvC4KrHGNMfEr16e3uYhZgcDHqUV/KqzsZ+BR62GN3Ew3Lpyn/QuACO9FqvyZ/Iyv0zYmOKyvX1ZVencSNPugJxNhK5cC/Z37q49SWxQvJMCpVw8MMCixAx1OWWoIP18MZQppZmA61mt9/vNt/gCR51CKsQYjIyRIAB23WcMhDYndnv+uHh4VNzHl0/H5LBx2H+CoJel0lcIMbDzfM6tfQc4BHkG5oF8P6CuQQWuEgoImh1Bs0mdc7WlFlw5Rq2Mpln9F40WFtI91V+1f0oNiTCSN4AciaPQKyb72mAJhU8nhLztu72p9PeLQtr+4F1a0xscwymvnUrnMEUnuS1VveMGPcOYlq9lh6nk5wRT1w0l85SBT4gX66oLjd8usyAlYf09un3gbD9BJCL4RBqG2KVD/+hQSI5/gfoeUgWB7Esmgs0RYIZ7hGR0wLP35H7IFsA3XPOM7JRzrNwcM9i1spljfd4r/X6I3gfBIpebpJguMLU2cC/9asY3bugOrsEgyQddiOgyxtMI4gkDzWeeNbr9RvgCZE4r2AIMKCTkejZIe614ovhLNhvYLS+lqYbDNbqycE09lnauSZ060lP0+t1YnIdrsHcY0QCB5jW8JW7PeZ2Fz4j37rga6lgdRBYlxc30mje32LmBkA3eTlNI69QUazQUnYhWtSraNamXtcMGPm+xjJ+km4U5haGBliiCXxx75FHdyDTOZoQxxZHBoIm9bagvPIz3EVYmMFsT4k7LsIUXczXqHPiK4gB8mNSO6SKeGMFUBEtAPqxki54wosw0T7U6ucJd+qHg5ecyMTDARjv6o1HF8IuSTUboN1CxhVoNGOnPozv9IBuYF1glFyjH2iX64jcFW4xvu/IaTHokJeBLkSl/Np8Dp2zHk0RvYOIUUD3Op04I7o8R+QuAPPvtaDYTdJdI2F3ILT2YPHCdEHA/Y27jYvohmi/r9OxPRqsFMlrBJAFpp1zORXIvj3K9fWO0Ozh7DMwH3MCjazLyWuhdakj/rE4UdCkjpt+eRDHsE7lRKrhaYEskYXQgCxR6DmDN0XEC0mdniWSgeRNpomRuOJ+kcfOQORqVJ/zBXHMusUSBU3qeOOJHH2+fYo/3iux7pAW79Ph9/O9iAyYLhP74esTnrIz6F4+QLqF0PAof4u69UdyTl5fq5DhQtvEx0FkXdBnfX4LozTBrdh4+C+hyhDfjQ49J78OSbG2LLopfR5EYoBBWS4w3w2f7huj+8Q+vt/XNqJTJD3jDLiDvni/Zc0SovNYDxGney6Tnpsb8iH/CbpdfNE56HUHtGRPirdb6a9t3HYHZ/5gsqZIY7ge4TGi23qlPTdsIJnr34GdZmNnp7uzo0Oxii9leX1uEAYazZ2dHQj+Hx5kenbMh74WQ0b32vdLN0Kz2+wOAdzBARv89iciZokSJUqUKFGiRIkSJUqUKFGiRIkSJUq8D/8DynBL77SzpjwAAAAASUVORK5CYII="); */
+  /* background-image: url("https://thumbs.dreamstime.com/b/democratic-republican-political-symbols-election-voting-vector-illustration-197865629.jpg");
+  height: 100%; */
+
+/* SLIDE title */
+.caption {
+  position: fixed;
+  right: 450px;
+  top: 75px;
+  /* width: 100%; */
+  text-align: center;
+  color: #000;
+}
+
+.caption span.border {
+  /* background-color: #111; */
+  color: #e21010;
+  font-style: oblique;
+  /* padding: 18px; */
+  font-size: 25px;
+  letter-spacing: 5px;
+}
